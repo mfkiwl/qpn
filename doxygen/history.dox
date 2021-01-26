@@ -8,6 +8,8 @@
 - Updated example projects for ARM Cortex-M with ARM/KEIL to use the startup in the odler ARM assembly (as opposed to ARMCLANG assembly)
 - Updated the doxygen styling
 
+@attention
+This is the last QP-nano release. The QP-nano framework is being __phased out__ and is not recommended for new product development.
 
 
 @section qpn_6_8_1 Version 6.8.1, 2020-04-04
@@ -909,7 +911,7 @@ default implementation uses a lookup table.
 4. Updated App Notes "QP and ARM Cortex-M with IAR" and "QP and ARM
 Cortex-M with GNU".
 
-5. Updated the PC-Lint support files (include/lib-qpn.lnt, au-misra2.lnt)
+5. Updated the PC-Lint support files (`lib-qpn.lnt`, `au-misra2.lnt`)
 to the latest PC-Lint 9.00j.
 
 6. Updated the Application Note: "QP-nano MISRA-C:2004 Compliance Matrix".
