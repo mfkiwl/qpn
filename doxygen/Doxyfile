@@ -1,4 +1,4 @@
-# Doxyfile 1.9.0
+# Doxyfile 1.9.2
 
 #---------------------------------------------------------------------------
 # Project related configuration options
@@ -6,16 +6,25 @@
 DOXYFILE_ENCODING      = UTF-8
 PROJECT_NAME           = "QP-nano"
 PROJECT_NUMBER         = "6.8.2"
-PROJECT_BRIEF          =
-PROJECT_LOGO           = images/header_logo_ql.png
+PROJECT_BRIEF          = "Real-Time Embedded Framework"
+PROJECT_LOGO           = images/logo_ql.png
 OUTPUT_DIRECTORY       =
 CREATE_SUBDIRS         = NO
 ALLOW_UNICODE_NAMES    = NO
 OUTPUT_LANGUAGE        = English
-OUTPUT_TEXT_DIRECTION  = None
 BRIEF_MEMBER_DESC      = YES
 REPEAT_BRIEF           = YES
-ABBREVIATE_BRIEF       =
+ABBREVIATE_BRIEF       = "The $name class" \
+                         "The $name widget" \
+                         "The $name file" \
+                         is \
+                         provides \
+                         specifies \
+                         contains \
+                         represents \
+                         a \
+                         an \
+                         the
 ALWAYS_DETAILED_SEC    = NO
 INLINE_INHERITED_MEMB  = NO
 FULL_PATH_NAMES        = NO
@@ -24,21 +33,22 @@ STRIP_FROM_INC_PATH    =
 SHORT_NAMES            = NO
 JAVADOC_AUTOBRIEF      = NO
 JAVADOC_BANNER         = NO
-QT_AUTOBRIEF           = YES
-MULTILINE_CPP_IS_BRIEF = YES
+QT_AUTOBRIEF           = NO
+MULTILINE_CPP_IS_BRIEF = NO
 PYTHON_DOCSTRING       = YES
 INHERIT_DOCS           = YES
 SEPARATE_MEMBER_PAGES  = NO
 TAB_SIZE               = 4
 ALIASES                = "next{1}=<hr><b>Next:</b> @ref \1</p>" \
                          "description=@par Description" \
+                         "amplification=@par Amplification" \
+                         "rationale=@par Rationale" \
+                         "caption{1}=<div class=\"caption\" align=\"center\">\1</div>" \
                          "hint=@par Hint" \
                          "usage=@par Usage" \
-                         "caption{1}=<div class=\"caption\" align=\"center\">\1</div>" \
-                         "reqdef{2}=<div class= vmargin20></div>@anchor \1 <TABLE><TR ALIGN= left><TH NOWRAP>\1</TH><TH WIDTH= 100%>\2</TH></TR></TABLE>" \
-                         "reqref{1}=@ref \1 \"\1\"" \
-                         "termdef{2}=@anchor term_\1 @par \2" \
-                         "termref{1}=@ref term_\1"
+                         "termref{2}=<a class=\"extern\" target=\"_blank\" href=\"https://www.state-machine.com/\1\">\2</a>" \
+                         "reqdef{1}=@anchor \1 @xrefitem reqdef \"Requirement\" \"Requirement Index\" @ref \1" \
+                         "reqref{1}=@ref \1 \"\1\""
 OPTIMIZE_OUTPUT_FOR_C  = YES
 OPTIMIZE_OUTPUT_JAVA   = NO
 OPTIMIZE_FOR_FORTRAN   = NO
@@ -80,6 +90,7 @@ INTERNAL_DOCS          = NO
 CASE_SENSE_NAMES       = NO
 HIDE_SCOPE_NAMES       = YES
 HIDE_COMPOUND_REFERENCE= NO
+SHOW_HEADERFILE        = YES
 SHOW_INCLUDE_FILES     = YES
 SHOW_GROUPED_MEMB_INC  = NO
 FORCE_LOCAL_INCLUDES   = NO
@@ -109,6 +120,7 @@ QUIET                  = NO
 WARNINGS               = YES
 WARN_IF_UNDOCUMENTED   = YES
 WARN_IF_DOC_ERROR      = YES
+WARN_IF_INCOMPLETE_DOC = YES
 WARN_NO_PARAMDOC       = NO
 WARN_AS_ERROR          = NO
 WARN_FORMAT            = "$file:$line: $text"
@@ -116,41 +128,39 @@ WARN_LOGFILE           =
 #---------------------------------------------------------------------------
 # Configuration options related to the input files
 #---------------------------------------------------------------------------
-INPUT = \
-    main.dox \
-    gs.dox \
-    struct.dox \
-    api.dox \
-    exa.dox \
-    exa_apps.dox \
-    exa_native.dox \
-    exa_os.dox \
-    ports.dox \
-    ports_native.dox \
-    ports_arm-cm.dox \
-    ports_os.dox \
-    history.dox \
-    macros.h \
-    metrics.dox \
-    modules.dox \
-    ../include \
-    ../src/qfn \
-    ../src/qvn \
-    ../src/qkn \
-    ../ports/lint-plus \
-    ../ports/lint-plus/qkn \
-    ../ports/lint-plus/qvn \
-    ../../doxygen/help.dox
+INPUT                  = main.dox \
+                         gs.dox \
+                         struct.dox \
+                         api.dox \
+                         exa.dox \
+                         exa_apps.dox \
+                         exa_native.dox \
+                         exa_os.dox \
+                         ports.dox \
+                         ports_native.dox \
+                         ports_arm-cm.dox \
+                         ports_os.dox \
+                         history.dox \
+                         macros.h \
+                         metrics.dox \
+                         modules.dox \
+                         ../include \
+                         ../src/qfn \
+                         ../src/qvn \
+                         ../src/qkn \
+                         ../ports/lint-plus \
+                         ../ports/lint-plus/qkn \
+                         ../ports/lint-plus/qvn \
+                         ../../ql-doxygen/help.dox
 
-INPUT_ENCODING = UTF-8
-FILE_PATTERNS  = \
-    *.dox \
-    *.h \
-    *.c \
-    *.cpp \
-    *.s \
-    *.asm \
-    *.lnt
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.dox \
+                         *.h \
+                         *.c \
+                         *.cpp \
+                         *.s \
+                         *.asm \
+                         *.lnt
 RECURSIVE              = YES
 EXCLUDE                =
 EXCLUDE_SYMLINKS       = NO
@@ -166,7 +176,7 @@ EXAMPLE_PATH           = snippets \
 EXAMPLE_PATTERNS       = *
 EXAMPLE_RECURSIVE      = NO
 IMAGE_PATH             = images \
-                         ../../doxygen/images
+                         ../../ql-doxygen/images
 INPUT_FILTER           =
 FILTER_PATTERNS        =
 FILTER_SOURCE_FILES    = NO
@@ -185,6 +195,7 @@ SOURCE_TOOLTIPS        = YES
 USE_HTAGS              = NO
 VERBATIM_HEADERS       = YES
 CLANG_ASSISTED_PARSING = NO
+CLANG_ADD_INC_PATHS    = YES
 CLANG_OPTIONS          =
 CLANG_DATABASE_PATH    =
 #---------------------------------------------------------------------------
@@ -198,14 +209,15 @@ IGNORE_PREFIX          =
 GENERATE_HTML          = YES
 HTML_OUTPUT            = ../html
 HTML_FILE_EXTENSION    = .html
-HTML_HEADER            = ../../doxygen/header.html
-HTML_FOOTER            = ../../doxygen/footer.html
+HTML_HEADER            = ../../ql-doxygen/header-awesome.html
+HTML_FOOTER            = ../../ql-doxygen/footer-awesome.html
 HTML_STYLESHEET        =
-HTML_EXTRA_STYLESHEET  = ../../doxygen/ql.css
-HTML_EXTRA_FILES       =
-HTML_COLORSTYLE_HUE    = 220
-HTML_COLORSTYLE_SAT    = 100
-HTML_COLORSTYLE_GAMMA  = 80
+HTML_EXTRA_STYLESHEET  = ../../ql-doxygen/doxygen-awesome.css \
+                         ../../ql-doxygen/ql-awesome.css
+HTML_EXTRA_FILES       = ../../ql-doxygen/doxygen-awesome-darkmode-toggle.js
+HTML_COLORSTYLE_HUE    = 209
+HTML_COLORSTYLE_SAT    = 255
+HTML_COLORSTYLE_GAMMA  = 113
 HTML_TIMESTAMP         = NO
 HTML_DYNAMIC_MENUS     = YES
 HTML_DYNAMIC_SECTIONS  = NO
@@ -234,16 +246,18 @@ GENERATE_ECLIPSEHELP   = NO
 ECLIPSE_DOC_ID         = com.state-machine.qp
 DISABLE_INDEX          = YES
 GENERATE_TREEVIEW      = YES
+FULL_SIDEBAR           = NO
 ENUM_VALUES_PER_LINE   = 4
-TREEVIEW_WIDTH         = 180
+TREEVIEW_WIDTH         = 300
 EXT_LINKS_IN_WINDOW    = NO
 HTML_FORMULA_FORMAT    = png
 FORMULA_FONTSIZE       = 10
 FORMULA_TRANSPARENT    = YES
 FORMULA_MACROFILE      =
 USE_MATHJAX            = NO
+MATHJAX_VERSION        = MathJax_2
 MATHJAX_FORMAT         = HTML-CSS
-MATHJAX_RELPATH        = http://cdn.mathjax.org/mathjax/latest
+MATHJAX_RELPATH        = https://cdn.jsdelivr.net/npm/mathjax@2
 MATHJAX_EXTENSIONS     =
 MATHJAX_CODEFILE       =
 SEARCHENGINE           = YES
@@ -272,7 +286,6 @@ PDF_HYPERLINKS         = YES
 USE_PDFLATEX           = YES
 LATEX_BATCHMODE        = NO
 LATEX_HIDE_INDICES     = NO
-LATEX_SOURCE_CODE      = NO
 LATEX_BIB_STYLE        = plain
 LATEX_TIMESTAMP        = NO
 LATEX_EMOJI_DIRECTORY  =
@@ -285,7 +298,6 @@ COMPACT_RTF            = NO
 RTF_HYPERLINKS         = NO
 RTF_STYLESHEET_FILE    =
 RTF_EXTENSIONS_FILE    =
-RTF_SOURCE_CODE        = NO
 #---------------------------------------------------------------------------
 # Configuration options related to the man page output
 #---------------------------------------------------------------------------
@@ -306,7 +318,6 @@ XML_NS_MEMB_FILE_SCOPE = NO
 #---------------------------------------------------------------------------
 GENERATE_DOCBOOK       = NO
 DOCBOOK_OUTPUT         = docbook
-DOCBOOK_PROGRAMLISTING = NO
 #---------------------------------------------------------------------------
 # Configuration options for the AutoGen Definitions output
 #---------------------------------------------------------------------------
@@ -327,13 +338,12 @@ EXPAND_ONLY_PREDEF     = NO
 SEARCH_INCLUDES        = YES
 INCLUDE_PATH           =
 INCLUDE_FILE_PATTERNS  =
-PREDEFINED             = \
-    Q_PARAM_SIZE=2 \
-    QF_TIMEEVT_CTR_SIZE=2 \
-    QF_TIMEEVT_PERIODIC \
-    QF_TIMEEVT_USAGE \
-    QK_SCHED_LOCK \
-    QK_ON_CONTEXT_SW
+PREDEFINED             = Q_PARAM_SIZE=2 \
+                         QF_TIMEEVT_CTR_SIZE=2 \
+                         QF_TIMEEVT_PERIODIC \
+                         QF_TIMEEVT_USAGE \
+                         QK_SCHED_LOCK \
+                         QK_ON_CONTEXT_SW
 
 EXPAND_AS_DEFINED      =
 SKIP_FUNCTION_MACROS   = YES
