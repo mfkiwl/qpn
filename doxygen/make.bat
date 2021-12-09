@@ -37,6 +37,7 @@
 @echo usage:
 @echo make
 @echo make -CHM
+@echo make ...
 
 :: Doxygen tool (adjust to your system) ......................................
 @set DOXYGEN=doxygen
@@ -90,7 +91,7 @@ if "%1"=="-CHM" (
     copy images\favicon.ico ..\html
 
     @echo Generating HTML...
-    %DOXYGEN% Doxyfile
+    %DOXYGEN% Doxyfile%1
     @qclean ..\html
 )
 

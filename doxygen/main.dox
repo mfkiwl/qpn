@@ -5,6 +5,9 @@
 @section ab_new What's new?
 To check what's new in QP-nano, please see @ref history "QP-nano Revision History".
 
+@attention
+The QP-nano framework is being __phased out__ and is not recommended for new product development.
+
 
 @section ab_about What is it?
 <a class="extern" target="_blank" href="https://www.state-machine.com/products/"><strong>QP-nano&trade; (Quantum Platform Nano)</strong></a> is an ultra-lightweight  <a class="extern" target="_blank" href="https://www.state-machine.com/doc/concepts#RTEF"><strong>Real-Time Embedded Framework (RTEF)</strong></a> for building responsive and modular real-time embedded applications as systems of asynchronous event-driven <a class="extern" target="_blank" href="https://www.state-machine.com/doc/concepts#Active"><strong>active objects</strong></a> (concurrent @ref sm "state machines"). The QP-nano&trade; RTEF is a member of a larger family consisting of QP-nano, <a href="https://www.state-machine.com/qpc" target="_blank" class="extern">QP/C</a>, and <a href="https://www.state-machine.com/qpcpp" target="_blank" class="extern">QP/C++</a> frameworks, which are all strictly quality controlled, thoroughly documented, and available under @ref licensing "dual licensing model".
