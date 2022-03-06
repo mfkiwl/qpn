@@ -103,6 +103,13 @@ you don't use any open source license and you do not violate your policy.
 The **QP-nano Manual** is located online at: https://www.state-machine.com/qpn
 
 ---------------------------------------------------------------------------
+# 3rd-Party QP-nano Ports/Adaptations
+
+[<b>QPN-PIC16</b>](https://github.com/aschatte/qpn) is an adaptation of the QP-nano framework to the [Microchip PIC16](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/pic-mcus) architecture as compiled by the MPALB-X IDE using the XC8 compiler (C90/C99). It allows QP-nano models developed using the QM modeling tool to be integrated with the QV-nano kernel to build [Active Object](https://www.state-machine.com/active-object) applications. The very limited resources of the PIC16 family of MCUs, primarily the hardware stack, required a special version of QP-nano and a QM-Modeler editing post-processor, `QM2HSM.exe`, to effect.
+
+
+
+---------------------------------------------------------------------------
 # How to get help?
 - [Free Support Forum](https://sourceforge.net/p/qpc/discussion/668726)
 - [Bug Reports](https://sourceforge.net/p/qpc/bugs/)

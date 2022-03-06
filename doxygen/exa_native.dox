@@ -19,10 +19,6 @@ Click on the following links to see examples for the specified CPU architectures
 /*##########################################################################*/
 /*! @page exa_qv QV-nano Kernel (Non-Preemptive, Priority-Based, Non-Blocking)
 
-@htmlonly
-<script src="preview.js" type="text/javascript"></script>
-@endhtmlonly
-
 @note
 You can hover the mouse cursor over the <span class="board"></span>&nbsp;&nbsp; icon in the list below to see the picture of the board.
 
@@ -40,10 +36,6 @@ You can hover the mouse cursor over the <span class="board"></span>&nbsp;&nbsp; 
 */
 /*##########################################################################*/
 /*! @page exa_qk QK-nano Kernel (Preemptive, Priority-Based, Non-Blocking)
-
-@htmlonly
-<script src="preview.js" type="text/javascript"></script>
-@endhtmlonly
 
 @note
 You can hover the mouse cursor over the <span class="board"></span>&nbsp;&nbsp; icon in the list below to see the picture of the board.
@@ -63,10 +55,6 @@ You can hover the mouse cursor over the <span class="board"></span>&nbsp;&nbsp; 
 /*##########################################################################*/
 /*! @page exa_arm-cm ARM Cortex-M (Cortex-M0/M0+/M3/M4F)
 
-@htmlonly
-<script src="preview.js" type="text/javascript"></script>
-@endhtmlonly
-
 @note
 You can hover the mouse cursor over the <span class="board"></span>&nbsp;&nbsp; icon in the list below to see the picture of the board.
 
@@ -82,10 +70,6 @@ You can hover the mouse cursor over the <span class="board"></span>&nbsp;&nbsp; 
 /*##########################################################################*/
 /*! @page exa_arm7-9 ARM7/ARM9 ("classic" ARM)
 
-@htmlonly
-<script src="preview.js" type="text/javascript"></script>
-@endhtmlonly
-
 @note
 You can hover the mouse cursor over the <span class="board"></span>&nbsp;&nbsp; icon in the list below to see the picture of the board.
 
@@ -93,10 +77,6 @@ You can hover the mouse cursor over the <span class="board"></span>&nbsp;&nbsp; 
 */
 /*##########################################################################*/
 /*! @page exa_msp430 MSP430 ("classic" MSP430 and "extended" MSP430x)
-
-@htmlonly
-<script src="preview.js" type="text/javascript"></script>
-@endhtmlonly
 
 @note
 You can hover the mouse cursor over the <span class="board"></span>&nbsp;&nbsp; icon in the list below to see the picture of the board.
@@ -424,10 +404,6 @@ Features:
 /*##########################################################################*/
 /*! @page exa_arm7-9 ARM7 / ARM9
 
-@htmlonly
-<script src="preview.js" type="text/javascript"></script>
-@endhtmlonly
-
 The native (bare-metal) QP-nano examples for the "classic" ARM7/ARM9 are as follows:
 
 - @subpage arm7-9_dpp_at91sam7s-ek <a class="preview board" href="bd_AT91SAM7S-EK.jpg" title="AT91SAM7S-EK"></a>
@@ -444,10 +420,6 @@ Dining Philosophers Problem (DPP) example for Atmel AT91SAM7S MCU (ARM7) with GN
 
 /*##########################################################################*/
 /*! @page exa_avr AVR (AVRmega)
-
-@htmlonly
-<script src="preview.js" type="text/javascript"></script>
-@endhtmlonly
 
 The native (bare-metal) QP-nano examples for the 8-bit AVRmega are as follows:
 
@@ -481,10 +453,6 @@ Dining Philosophers Problem (DPP) example for Arduino-UNO with GNU-AVR and IAR-A
 
 /*##########################################################################*/
 /*! @page exa_msp430 MSP430
-
-@htmlonly
-<script src="preview.js" type="text/javascript"></script>
-@endhtmlonly
 
 The native (bare-metal) QP-nano examples for MSP430 are as follows:
 
