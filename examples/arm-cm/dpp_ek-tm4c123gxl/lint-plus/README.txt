@@ -4,7 +4,7 @@ This directory contains the facilities for "linting" the application with
 PC-Lint-Plus.
 
 To "lint" the application, invoke the batch "lin.bat"  without parameters.
- 
+
 
 The output from the "linting" is saved in the fle "lin_out.log".
 

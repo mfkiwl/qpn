@@ -1,15 +1,21 @@
 /**
 @page history Revision History
 
+@section qpn_6_9_0 Version 6.9.0, 2020-08-21
+
+- Applied the Doxygen commands `extends` and `memberof` to indicate inheritance and to explicitly specify base classes for all derived classes (e.g., QActive extends QHsm).
+- Fixed some errors in documentation comments in source code, etc.
+- Bumped version to 6.9.0 for compatibility with QM 5.1.3
+
+@attention
+This is the last QP-nano release. The QP-nano framework is being __phased out__ and is not recommended for new product development.
+
 
 @section qpn_6_8_2 Version 6.8.2, 2020-06-30
 
 - Updated 3rd_party/CMSIS to version 5.7.0
 - Updated example projects for ARM Cortex-M with ARM/KEIL to use the startup in the odler ARM assembly (as opposed to ARMCLANG assembly)
 - Updated the doxygen styling
-
-@attention
-This is the last QP-nano release. The QP-nano framework is being __phased out__ and is not recommended for new product development.
 
 
 @section qpn_6_8_1 Version 6.8.1, 2020-04-04

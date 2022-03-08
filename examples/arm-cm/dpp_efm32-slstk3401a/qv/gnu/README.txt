@@ -11,7 +11,7 @@ The provided Makefile should be easy to adapt for your own projects.
 It contains two build configurations: Debug (default) and Release.
 
 Also, the Makefile has been specifically designed to work as an external
-Makefile with the Eclipse CDT. 
+Makefile with the Eclipse CDT.
 
 The various build configurations are built as follows:
 
@@ -38,7 +38,7 @@ Adjusting Stack and Heap Sizes
 The stack and heap sizes are determined in this project by the GCC linker
 script (.ld file), which provides a template of the recommended GCC linker
 script for QP applications.
-   
+
 
 Startup Code
 ============
@@ -53,7 +53,7 @@ ARM Cortex-M microcontrollers.
 
 The startup file typically does not need to be modified or adapted for
 applications. It provides only weak definitions of all exception and
-interrupt handlers, as well as the assert_failed() function.  
+interrupt handlers, as well as the assert_failed() function.
 
 The weak function assert_failed() defined in this file might be re-defined
 in the application to customize it for the application-specific error-

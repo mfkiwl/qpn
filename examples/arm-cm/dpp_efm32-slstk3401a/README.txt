@@ -1,5 +1,5 @@
-About this Example
-==================
+About this Example
+==================
 This directory contains the simple DPP QP-nano example application for
 the EK-TM4C123GXL board (TivaC LauchPad). This directory contains portable
 code that should compile with any C compiler.
@@ -15,14 +15,14 @@ Please refer to the README files in the sub-directories for instructions
 how to use and customize the example to your needs.
 
 
-Support Code for EK-TM4C123GXL Board 
+Support Code for EK-TM4C123GXL Board
 ====================================
 The directory qpn\3rd_party\ek-tm4c123gxl contains the CMSIS-compliant
 device code for the TM4C123GH6PM MCU. Please see the README.txt file in
 this folder for more details.
 
 
-Win32 Emulation 
+Win32 Emulation
 ===============
 The sub-directory win32-qv provides the emulation of the example on Windows
 as a GUI application. The sub-directory contains the Makefile for the
@@ -35,7 +35,7 @@ is developed on the desktop machine (Windows), but is intended for a deeply
 embedded target (TivaC LauchPad here).
 
 
-Lint Support 
+Lint Support
 ============
 The sub-directory lint provides the scripts and configuration files for
 running the PC-Lint static analysis tool over the application code. Please

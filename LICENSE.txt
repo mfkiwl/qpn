@@ -1,6 +1,6 @@
 The QP-nano Real-Time Embedded Framework (RTEF) is licensed under the
 dual-licensing model, in which both the open source and traditional
-closed source software distribution models are combined. For more 
+closed source software distribution models are combined. For more
 information, please see:
 
 https://www.state-machine.com/licensing

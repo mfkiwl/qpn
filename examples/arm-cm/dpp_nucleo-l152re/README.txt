@@ -12,7 +12,7 @@ Please refer to the README files in the sub-directories for specific
 instructions how to use and customize the example to your needs.
 
 
-Support Code for NUCLEO-L152RE Board 
+Support Code for NUCLEO-L152RE Board
 ====================================
 The directory qpc\3rd_party\nucleo-l152re contains the CMSIS-compliant
 device code for the STM32L152xx MCUs (ARM Cortex-M3). Please see the
@@ -30,7 +30,7 @@ of clock setting using the PLL driven from the MSE.
 NOTE:
 The NUCLEO boards have a wide range of possible clock selections, depending
 on the solder bridge configuration. Please see Chapter 5.7 "OSC clock" in
-the STM32 NUCLEO Boards User Manual (ST document UM1724) for more information. 
+the STM32 NUCLEO Boards User Manual (ST document UM1724) for more information.
 ***
 
 
