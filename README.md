@@ -1,4 +1,4 @@
-![QP-nano framework](https://www.state-machine.com/img/qpn_banner.jpg)
+[![QP-nano framework](https://www.state-machine.com/img/qpn_banner.jpg)](https://www.state-machine.com)
 
 > **NOTE:** If your company has a policy forbidding open source in your
 product, all QP frameworks can be
